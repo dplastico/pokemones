@@ -1,12 +1,15 @@
 <?php
 session_start();
-$host = "localhost"; /* Host name */
-$user = "root"; /* User */
-$password = ""; /* Password */
-$dbname = "tutorial"; /* Database name */
+$host = "localhost"; 
+$user = "root"; 
+$password = "toor";
+$dbname = "bruteforce"; 
 
 $con = mysqli_connect($host, $user, $password,$dbname);
-// Check connection
+// debug de la conexion
 if (!$con) {
  die("Connection failed: " . mysqli_connect_error());
 }
+
+
+
