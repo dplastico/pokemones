@@ -49,11 +49,11 @@ body {
 }
 
 #ch01 {
-    background-image: url("/pokemones/img/p00.png");
+    background-image: url("../img/p00.png");
 }
 
 #ch02 {
-    background-image: url("/pokemones/img/p01.png");
+    background-image: url("../img/p01.png");
 
 }
 #ch03 {
@@ -61,7 +61,7 @@ body {
 
 }
 #ch04 {
-    background-image: url("/pokemones/img/p03.png");
+    background-image: url("../img/p03.png");
 }
 
 
