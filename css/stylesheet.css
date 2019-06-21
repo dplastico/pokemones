@@ -35,25 +35,48 @@ body {
 .challenge-each {
 	border-style: solid;
 	border-width: 1px;
-	border-color: rgb(217, 245, 5);
+	border-color: rgb(41, 245, 5);
 	border-radius: 10px;
-	height: 250px;
+	height: 500px;
 	margin: 2px;
 	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 450px;
-	margin: 0 auto;
+	width: 500px;
     display: inline-block;
     line-height: 3em;
+    /* background-color:white; */
+    box-shadow: 0px 7px 12px -4px #3f3f3f;
 }
 
+#ch01 {
+    background-image: url("/pokemones/img/p00.png");
+}
+
+#ch02 {
+    background-image: url("/pokemones/img/p01.png");
+
+}
+#ch03 {
+    background-image: url("/pokemones/img/p02.png");
+
+}
+#ch04 {
+    background-image: url("/pokemones/img/p03.png");
+}
+
+
+
 #ch01,
-#ch01,
+#ch02,
 #ch03,
 #ch04 {
-	margin: 10px;
-	/* margin: 0 auto; */
+    margin-top: 15px;
+    margin-bottom:15px;
+    margin-left:10px;
+    margin-right:10px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position-y: 150px;
+    background-size: 90%;
 }
 
 .challenge-container {
