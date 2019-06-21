@@ -19,7 +19,7 @@
 
 `$ GRANT ALL PRIVILEGES ON _._ TO 'root'@'localhost' IDENTIFIED BY PASSWORD 'toor';`
 
-Docker
+**Docker**
 
 Run 
 
