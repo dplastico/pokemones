@@ -15,9 +15,9 @@
  - Flush privileges
  - Grant privileges to root 
 
-`$ GRANT ALL PRIVILEGES ON _._ TO root@'localhost' IDENTIFIED BY 'toor' with GRANT OPTION;`
+`$ GRANT ALL PRIVILEGES ON *.* TO root@'localhost' IDENTIFIED BY 'toor' with GRANT OPTION;`
 
-`$ GRANT ALL PRIVILEGES ON _._ TO 'root'@'localhost' IDENTIFIED BY PASSWORD 'toor';`
+`$ GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY PASSWORD 'toor';`
 
 **Docker**
 
