@@ -23,7 +23,7 @@
 
 Run 
 
-    `docker-compose up --build`
+`docker-compose up --build`
 
 Entrar a MySQL desde Docker
 
@@ -39,4 +39,4 @@ Visit http://localhost:3000/index.html
 
 Iniciar sesión con 
 - usuario: misty
-- pass: psyduck.
+- pass: psyduck
