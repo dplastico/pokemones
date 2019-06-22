@@ -64,8 +64,6 @@ body {
     background-image: url("../img/p03.png");
 }
 
-
-
 #ch01,
 #ch02,
 #ch03,
@@ -112,11 +110,9 @@ body {
 	background-color: #FFFFFF;
 }
 
-
 /* @media all and (max-width:30em){
      a.button1{
       display:block;
       margin:0.4em auto;
      }
     }  */
-
