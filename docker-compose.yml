@@ -8,7 +8,7 @@ db:
     - MYSQL_USER=root
     - MYSQL_DATABASE=bruteforce
   ports:
-    - 1234    
+    - 3306    
 php:
   container_name: pokemones
   build: .
