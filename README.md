@@ -23,6 +23,20 @@
 
 Run 
 
-    docker-compose up --build
+    `docker-compose up --build`
+
+Entrar a MySQL desde Docker
+
+`docker exec -it pokemones_db bash`
+
+- Entrar como root a MySQL
+- Una vez siendo root, correr
+
+`insert into users (nickname, passwd) values ("misty", "psyduck");`
+
 
 Visit http://localhost:3000/index.html
+
+Iniciar sesión con 
+- usuario: misty
+- pass: psyduck.
