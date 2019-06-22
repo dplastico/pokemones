@@ -92,7 +92,8 @@ body {
 	display: inline-block;
 	padding: 0.35em 1.2em;
 	border: 0.1em solid rgb(253, 0, 219);
-	margin: 0 0.3em 0.3em 0;
+	/* margin: 10 0.3em 0.3em 0; */
+	margin-top:10px;
 	border-radius: 0.12em;
 	box-sizing: border-box;
 	text-decoration: none;
@@ -104,7 +105,7 @@ body {
     background-color: rgb(255, 0, 128);
     height: 40px;
     text-transform: uppercase;
-    font-weight: 800;
+	font-weight: 800;
 }
 
 .button1:hover {
