@@ -1,30 +1,28 @@
-# pokemones
-C4 CTF repo
 
- 
- requerimientos
- php 7
- apache 2
- mariadb
- mysql server
+**C4 CTF**
 
- pasos 
- clonar el repositorio
- modificar desde donde se sirven los archivos para el servidor apache
- ingresar a la db con la configuracion default
-crear db bruteforce
+**System requirements**
 
- fijarse que las credenciales en uso sean las de config.php
- 
-hacer flush privileges 
- 
- entregar privilegios de todo a root y a 'root' sobre la db bruteforce
- 
- GRANT ALL PRIVILEGES ON *.* TO root@'localhost' IDENTIFIED BY 'toor' with GRANT OPTION;
+ - php 7  
+ - apache2  
+ - mysql server
 
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY PASSWORD 'toor';
+**Steps**
+- Clone repository
+ - Check Apache installation
+ - Run MariaDB and sign in with credentials
+ - Create database "bruteforce"
+ - Flush privileges
+ - Grant privileges to root 
 
+`$ GRANT ALL PRIVILEGES ON _._ TO root@'localhost' IDENTIFIED BY 'toor' with GRANT OPTION;`
 
- 
- 
- 
+`$ GRANT ALL PRIVILEGES ON _._ TO 'root'@'localhost' IDENTIFIED BY PASSWORD 'toor';`
+
+**Docker**
+
+Run 
+
+    docker-compose up --build
+
+Visit http://localhost:3000/index.html
