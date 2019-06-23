@@ -121,14 +121,19 @@ body {
      }
     }  */
 
-.textbox {
-	margin:10px;
-	width: 80%;
-}
+/* .textbox {
+} */
 
 #txt_message {
-	height: 300px;
-	/* box-sizing: border-box; */
+	width: 80%;
 	resize: none;
+	color:#333333;
+}
+
+#txt_message, .textbox {
+	padding:10px;
 	border: 1px solid #ff00bf;
+	margin:10px;
+	width:80%;
+	font-size: 15px;
 }
