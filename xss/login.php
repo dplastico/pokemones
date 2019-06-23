@@ -1,6 +1,6 @@
 <?php
 include "config.php";
-include "header.php";
+// include "header.php";
 
 
 if(isset($_POST['but_submit'])){
@@ -48,15 +48,19 @@ if(isset($_POST['but_submit'])){
     <div class="col">
     <form method="post" action="">
         <div id="div_login">
-            <h1>Login</h1>
+            <h1>Déjanos un mensaje</h1>
             <div>
-                <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
+                <input type="text" class="textbox" id="txt_email" name="txt-email" placeholder="email" />
             </div>
             <div>
-                <input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
+                <input type="text" class="textbox" id="txt_subject" name="txt_subject" placeholder="asunto"/>
             </div>
             <div>
-                <input class="button1" type="submit" value="Submit" name="but_submit" id="but_submit" />
+                <input type="text" class="textbox" id="txt_message" name="txt_message" placeholder="escribe tu mensaje aquí..."/>
+            </div>
+            
+            <div>
+                <input class="button1" type="submit" value="Enviar mensaje" name="but_submit" id="but_submit" />
             </div>
         </div>
     </form>

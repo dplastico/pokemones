@@ -1,6 +1,6 @@
 <?php
 include "config.php";
-include "header.php";
+// include "header.php";
 
 
 if(isset($_POST['but_submit'])){
@@ -32,7 +32,7 @@ if(isset($_POST['but_submit'])){
  <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>CTF PKMN</title>
+      <title>XSS / CTF PKMN</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/stylesheet.css">
@@ -50,7 +50,7 @@ if(isset($_POST['but_submit'])){
         <div id="div_login">
             <h1>Login</h1>
             <div>
-                <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
+                <input type="text" class="textbox" id="xss_script" name="xx_txt_uname" placeholder="Username" />
             </div>
             <div>
                 <input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>

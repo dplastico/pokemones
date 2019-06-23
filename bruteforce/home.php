@@ -30,15 +30,9 @@ if(isset($_POST['but_logout'])){
                         <form method='post' action="">
                             <input class="button1" type="submit" value="Logout" name="but_logout">
                         </form>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </body>
-
-    </html>
+</html>
