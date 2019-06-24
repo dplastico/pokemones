@@ -130,10 +130,13 @@ body {
 	color:#333333;
 }
 
-#txt_message, .textbox {
+#txt_message, .textbox, #msgPreview {
 	padding:10px;
 	border: 1px solid #ff00bf;
 	margin:10px;
 	width:80%;
 	font-size: 15px;
+}
+#msgPreview {
+	margin: 10px auto 10px auto;
 }
