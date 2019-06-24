@@ -2,15 +2,15 @@
 include "include/header.php";
 //declaracion variables de inputs del form
 
-// $visitMail = "";
-// $visitSubject = "";
-// $visitMessage = "";
+$visitMail = "";
+$visitSubject = "";
+$visitMessage = "";
 
 if(isset($_POST['but_submit'])) {
 
     $visitMail = $_POST['txt_email'];
     $visitSubject = $_POST['txt_subject'];
-    $visitMessage = $_POST['txt_message'];
+    $visitMessage = $_POST['txt_msg'];
 
     if ($visitMail != "" && $visitSubject != "" && $visitMessage != ""){
 
@@ -19,7 +19,7 @@ if(isset($_POST['but_submit'])) {
         // $row = mysqli_fetch_array($result);
 
         // $count = $row['cntUser'];
-        echo "<p>este es tu email  $visitMail</p>";
+        echo "<p>este es tu msg $visitMessage</p>";
     } else {
         echo " no hay datos";
     }
@@ -45,13 +45,13 @@ if(isset($_POST['but_submit'])) {
         <div id="div_login">
             <h1>Déjanos un mensaje</h1>
             <div>
-                <input type="text" class="textbox" id="txt_email" name="txt_email" placeholder="email" />
+                <input type="text" class="textbox" name="txt_email" placeholder="email" />
             </div>
             <div>
-                <input type="text" class="textbox" id="txt_subject" name="txt_subject" placeholder="asunto"/>
+                <input type="text" class="textbox" name="txt_subject" placeholder="asunto"/>
             </div>
             <div>
-                <textarea type="text" id="txt_message" placeholder="escribe tu mensaje aquí..."></textarea>
+                <textarea type="text" id="txt_message" name="txt_msg" placeholder="escribe tu mensaje aquí..."></textarea>
             </div>
             
             <div>
