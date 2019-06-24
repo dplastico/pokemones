@@ -40,3 +40,32 @@ Visit http://localhost:3000/index.html
 Iniciar sesión con 
 - usuario: misty
 - pass: psyduck
+
+**Script SQL para poblar V 1.0**
+
+**_ES 1.0 PORQUE AUN ESTA EN PRUEBAS Y LOS PASSWORD ESTAN SIN SER HASHEADOS ENTONCES SE PRUEBA CON TEXTO PLANO _**
+
+
+1. Autenticarse como root en container de MySQL
+
+Correr en terminal:
+
+`docker exec -it pokemones_db bash`
+
+_pokemones_db es el container de la base de datos._
+
+2. Autotenticarse como root
+
+- user: root
+- password: toor
+
+3. Correr el siguiente script:
+
+`CREATE DATABASE bruteforce;`
+`USE bruteforce;`
+`CREATE TABLE users (nickname VARCHAR(15), passwd VARCHAR(15));`
+`INSERT INTO users VALUES ("misty","psyduck");`
+`CREATE DATABASE sqli;`
+`USE sqli;`
+`CREATE TABLE members (username VARCHAR(15), password VARCHAR(15));`
+`INSERT INTO members VALUES ("pikachu","raychu");`
