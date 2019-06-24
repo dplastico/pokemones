@@ -1,6 +1,6 @@
 <?php
 include "config.php";
-include "header.php";
+include "include/header.php";
 
 if(isset($_POST['but_submit'])) {
     $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);

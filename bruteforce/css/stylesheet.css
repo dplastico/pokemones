@@ -48,38 +48,6 @@ body {
     vertical-align: top;
 }
 
-#ch01 {
-    background-image: url("/pokemones/img/p00.png");
-}
-
-#ch02 {
-    background-image: url("/pokemones/img/p01.png");
-
-}
-#ch03 {
-    background-image: url("/pokemones/img/p02.png");
-
-}
-#ch04 {
-    background-image: url("/pokemones/img/p03.png");
-}
-
-
-
-#ch01,
-#ch02,
-#ch03,
-#ch04 {
-    margin-top: 15px;
-    margin-bottom:15px;
-    margin-left:10px;
-    margin-right:10px;
-    background-repeat: no-repeat;
-    background-position:center;
-    background-position-y: 150px;
-    background-size: 90%;
-}
-
 .challenge-container {
 	text-align: center;
     /* align-items: flex-start; */
