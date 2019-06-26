@@ -1,6 +1,6 @@
 <?php
 include "config.php";
-include "include/header.php";
+include "../include/header.php";
 
 if(isset($_POST['but_submit'])) {
     $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
@@ -37,7 +37,7 @@ else {
       <title>CTF PKMN</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/stylesheet.css">
+      <link rel="stylesheet" href="../css/stylesheet.css">
    </head>
    <body>
 <div class="container">
