@@ -1,35 +1,38 @@
 <?php
+ob_start();
 include "config.php";
 include "../include/header.php";
 
-if(isset($_POST['but_submit'])) {
-    $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
-    $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
-
-    if ($uname != "" && $password != ""){
-
-        $sql_query = "select count(*) as cntUser from users where nickname='".$uname."' and passwd='".$password."'";
-        $result = mysqli_query($con,$sql_query);
-        $row = mysqli_fetch_array($result);
-
+if (isset($_POST['but_submit'])) {
+    $uname    = mysqli_real_escape_string($con, $_POST['txt_uname']);
+    $password = mysqli_real_escape_string($con, $_POST['txt_pwd']);
+    
+    if ($uname != "" && $password != "") {
+        
+        $sql_query = "select count(*) as cntUser from users where nickname='" . $uname . "' and passwd='" . $password . "'";
+        $result    = mysqli_query($con, $sql_query);
+        $row       = mysqli_fetch_array($result);
+        
         $count = $row['cntUser'];
-
-        if($count > 0){
+        
+        if ($count > 0) {
             $_SESSION['uname'] = $uname;
             header('Location: home.php');
             echo "welcome. ", mysqli_error($con);
-        }
-        else {
-            echo "Invalid username and password. ", mysqli_error($con);      
+            // die();
+        } else {
+            echo "Usuario y password inválidos ", mysqli_error($con);
         }
     }
-        
-else {
-    echo "U must specify user and password. ", mysqli_error($con);
-    }
+    
+} else if ($uname == "" || $password == "") {
+    echo "No puedes dejar campos vacíos";
+} else {
+    echo "Debes indicar usuario y password.", mysqli_error($con);
 }
 
-?>
+
+?> 
  <!-- //creo que falta ponerle el estilo y eso ahi no se -->
  <!DOCTYPE html>
 <html lang="en">

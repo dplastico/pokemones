@@ -1,4 +1,10 @@
-<link rel="stylesheet" href="../css/stylesheet.css">
-s
-
-dsfdslfdsjfjdkds
+<?php
+include "config.php";
+// include "../include/header.php";
+?>
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    
