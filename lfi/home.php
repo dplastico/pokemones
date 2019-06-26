@@ -21,7 +21,6 @@ include "../include/header.php";
                     <h1>soon </h1>
                 </div>    
             </div>
-
         </div>    
     </div>
 </body>

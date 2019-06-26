@@ -137,3 +137,13 @@ body {
 #msgPreview {
 	margin: 10px auto 10px auto;
 }
+
+.warning-msg {
+	width: 100%;
+	height: auto;
+	margin: 10px 0px 10px 0px;
+	padding:20px;
+	background-color: rgba(255, 0, 0, 0.383);
+	border: 1px solid red;
+
+}
