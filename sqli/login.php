@@ -26,27 +26,22 @@ if(isset($_POST['but_submit'])) {
         }
     }
 
-else {
+    else if ($uname == "" || $password == "") {
+        echo "u can't leave empty fields";
+    }
+    else 
+    {
     echo "U must specify user and password. ", mysqli_error($con);
     }
 }
-
-
 ?>
-
-
-
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <title>SQL injection | CTF PKMN</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="../css/stylesheet.css">
-   
-
-   
+      <link rel="stylesheet" href="../css/stylesheet.css">   
     </head>
    <body>
 <div class="container">
