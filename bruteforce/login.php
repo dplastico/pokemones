@@ -3,8 +3,6 @@ ob_start();
 include "config.php";
 include "../include/header.php";
 
-
-
     if (isset($_POST['but_submit'])) {
         $uname    = mysqli_real_escape_string($con, $_POST['txt_uname']);
         $password = mysqli_real_escape_string($con, $_POST['txt_pwd']);
@@ -47,7 +45,7 @@ include "../include/header.php";
    </head>
    <body>
 <div class="container">
-    <!-- <//?php include("../include/header.php"); ?>   -->
+    <!-- <//?php include("../include/header"); ?>   -->
     
     <div class="container-narrow">
         <div class="row">

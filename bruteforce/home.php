@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 include "config.php";
 // esto chequea si el usario esta logeado, use uname capaz estandarizar el post a username? da lo mismo si
 if(!isset($_SESSION['uname'])){

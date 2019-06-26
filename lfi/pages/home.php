@@ -1,7 +1,7 @@
 <?php
 ob_start();
 // include "config.php";
-include "../../include/header.php";
+include "../../include/header";
 
 ?>
 <!DOCTYPE html>
