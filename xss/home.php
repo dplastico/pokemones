@@ -61,10 +61,9 @@ $visitMessage = "";
 
                         echo $msgResult;
                     } else {
-                        echo "No puedes dejar campos vacíos.";
+                        echo "<div class='warning-msg'>No puedes dejar campos vacíos.</div>";
                     }
                 }
-
                 ?>
 
             </div>

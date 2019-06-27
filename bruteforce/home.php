@@ -2,6 +2,8 @@
 ob_start();
 
 include "config.php";
+include "../include/header.php";
+
 // esto chequea si el usario esta logeado, use uname capaz estandarizar el post a username? da lo mismo si
 if(!isset($_SESSION['uname'])){
     header('Location: login.php'); //hay que revisar este header para que apunte a un index... capaz crear un index?

@@ -1,8 +1,7 @@
 <?php
 ob_start();
 // include "config.php";
-include "../../include/header";
-
+include "../../include/header.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,4 +24,4 @@ include "../../include/header";
         </div>    
     </div>
 </body>
-</html>
+</html> 

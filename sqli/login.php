@@ -21,14 +21,14 @@ if (isset($_POST['but_submit'])) {
             header('Location: home.php');
             // echo "welcome. ", mysqli_error($con);
         } else {
-            echo "Usuario y password inválidos ", mysqli_error($con);
+            echo "<div class='warning-msg'>Usuario y password inválidos</div>";
         }
     }
     
     else if ($uname == "" || $password == "") {
-        echo "No puedes dejar campos vacíos";
+        echo "<div class='warning-msg'>No puedes dejar campos vacíos</div>";
     } else {
-        echo "Debes indicar usuario y password. ", mysqli_error($con);
+        echo "<div class='warning-msg'>Debes indicar usuario y password. </div>", mysqli_error($con);
     }
 } 
 ?>
