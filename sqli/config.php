@@ -1,7 +1,7 @@
 <?php
 //este PHP conecta a la DB hay que quizas despues eliminar el debug para no dar pistas
 session_start();
-$host = $_ENV['DB_1_PORT_3306_TCP_ADDR']; 
+$host = $_ENV['DB_PORT_3306_TCP_ADDR']; 
 // $host = "localhost";
 $user = "root"; 
 $password = "toor";
