@@ -1,1 +1,1 @@
-soi index.php
+soi index.php adentro de LFI
