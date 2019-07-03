@@ -31,7 +31,7 @@
                   <div class="challenge-each" id="ch02">
                     <h4> 2. XSS</h4>
                     <p>Consigue un flag haciendo un cross site scripting.</p>
-                  
+
                     <button onclick="window.location.href='xss/home.php'" class="button1">Ir al desafío</button>                  
 
                   </div>
