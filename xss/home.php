@@ -55,15 +55,15 @@ $visitMessage = "";
                     $visitMessage = trim($_POST['txt_msg']);
                     
                     $visitMail = trim(strip_tags(addslashes($visitMail)));
-                    $visitMail = mysql_real_escape_string($visitMail);
+                    // $visitMail = mysql_real_escape_string($visitMail);
                     $visitMail = html_entity_decode($visitMail);
 
                     $visitSubject = trim(strip_tags(addslashes($visitSubject)));
-                    $visitSubject = mysql_real_escape_string($visitSubject);
+                    // $visitSubject = mysql_real_escape_string($visitSubject);
                     $visitSubject = html_entity_decode($visitSubject);
                     
                     $visitMessage = trim(strip_tags(addslashes($visitMessage)));
-                    $visitMessage = mysql_real_escape_string($visitMessage);
+                    // $visitMessage = mysql_real_escape_string($visitMessage);
                     $visitMessage = html_entity_decode($visitMessage);
                     
 
