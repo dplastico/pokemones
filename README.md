@@ -69,4 +69,3 @@ _pokemones_db es el container de la base de datos._
 `USE sqli;`
 `CREATE TABLE members (username VARCHAR(15), password VARCHAR(15));`
 `INSERT INTO members VALUES ("pikachu","raychu");`
-# pancitoshack
