@@ -29,15 +29,14 @@ include "../include/header.php";
                 <div class="col">
                     <h3>Explora Pokemon Red</h3>
                     <h4>Mapas</h4>
-                        <p><a href="#">Pewter City</a></p>
-
-                        <p><a href="#">Cerulean City</a></p>
-                        <p><a href="#">Vermilion City</a></p>
-                        <p><a href="#">Saffron City</a></p>
-                        <p><a href="#">Celadon City</a></p>
-                        <p><a href="#">Fuchsia City</a></p>
-                        <p><a href="#">Cinnabar Island</a></p>
-                        <p><a href="#">Viridian City</a></p>
+                        <p><a href="../maps/pewter/city.php">Pewter City</a></p>
+                        <p><a href="../maps/cerulean/city.php">Cerulean City</a></p>
+                        <p><a href="../maps/vermilion/city.php">Vermilion City</a></p>
+                        <p><a href="../maps/saffron/city.php">Saffron City</a></p>
+                        <p><a href="../maps/celadon/city.php">Celadon City</a></p>
+                        <p><a href="../maps/fuchsia/city.php">Fuchsia City</a></p>
+                        <p><a href="../maps/cinnabar/city.php">Cinnabar Island</a></p>
+                        <p><a href="../maps/viridian/city.php">Viridian City</a></p>
 
                         <hr>
 
