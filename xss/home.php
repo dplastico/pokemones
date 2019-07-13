@@ -7,6 +7,7 @@ $visitSubject = "";
 $visitMessage = "";
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +19,7 @@ $visitMessage = "";
 </head>
 
 <body>
+
     <div class="container">
         <div class="container-narrow">
             <div class="row">
@@ -29,13 +31,13 @@ $visitMessage = "";
                     <div id="div_login">
                         <h1>Déjanos un mensaje</h1>
                         <div>
-                            <input type="text" class="textbox" name="txt_email" placeholder="email" />
+                            <input type="text" class="textbox" name="txt_email" placeholder="email" id="email"/>
                         </div>
                         <div>
-                            <input type="text" class="textbox" name="txt_subject" placeholder="asunto" />
+                            <input type="text" class="textbox" name="txt_subject" placeholder="asunto" id="asunto" />
                         </div>
                         <div>
-                            <textarea type="text" id="txt_message" name="txt_msg" placeholder="escribe tu mensaje aquí..."></textarea>
+                            <textarea type="text" id="txt_message" name="txt_msg" placeholder="escribe tu mensaje aquí..." id="mensaje"></textarea>
                         </div>
 
                         <div>
@@ -48,9 +50,22 @@ $visitMessage = "";
 
                     if(isset($_POST['but_submit'])) {
 
-                    $visitMail = $_POST['txt_email'];
-                    $visitSubject = $_POST['txt_subject'];
-                    $visitMessage = $_POST['txt_msg'];
+                    $visitMail = trim($_POST['txt_email']);
+                    $visitSubject = trim($_POST['txt_subject']);
+                    $visitMessage = trim($_POST['txt_msg']);
+                    
+                    $visitMail = trim(strip_tags(addslashes($visitMail)));
+                    $visitMail = mysql_real_escape_string($visitMail);
+                    $visitMail = html_entity_decode($visitMail);
+
+                    $visitSubject = trim(strip_tags(addslashes($visitSubject)));
+                    $visitSubject = mysql_real_escape_string($visitSubject);
+                    $visitSubject = html_entity_decode($visitSubject);
+                    
+                    $visitMessage = trim(strip_tags(addslashes($visitMessage)));
+                    $visitMessage = mysql_real_escape_string($visitMessage);
+                    $visitMessage = html_entity_decode($visitMessage);
+                    
 
                     if ($visitMail != "" && $visitSubject != "" && $visitMessage != ""){
 
@@ -63,6 +78,7 @@ $visitMessage = "";
                     } else {
                         echo "<div class='warning-msg'>No puedes dejar campos vacíos.</div>";
                     }
+                    
                 }
                 ?>
 
