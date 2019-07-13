@@ -63,7 +63,7 @@ $visitMessage = "";
                     $visitSubject = html_entity_decode($visitSubject);
                     
                     $visitMessage = trim(strip_tags(addslashes($visitMessage)));
-                    // $visitMessage = mysql_real_escape_string($visitMessage);
+                    // $visitMessage = mysqli_real_escape_string($visitMessage);
                     $visitMessage = html_entity_decode($visitMessage);
                     
 
