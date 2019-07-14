@@ -65,6 +65,7 @@ _pokemones_db es el container de la base de datos._
 `USE bruteforce;`
 `CREATE TABLE users (nickname VARCHAR(15), passwd VARCHAR(15));`
 `INSERT INTO users VALUES ("misty","psyduck");`
+`INSERT INTO users VALUES ("misty","$2y$10$p.M9wuzqAyvMYAnKr7k39OE/ardVu8ilCn7Wn6RK1.UgNMYXR8ifG");` 
 `CREATE DATABASE sqli;`
 `USE sqli;`
 `CREATE TABLE members (username VARCHAR(15), password VARCHAR(15));`

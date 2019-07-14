@@ -1,1 +1,1 @@
-soi index.php adentro de LFI
+aqui no hay nada!
