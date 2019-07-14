@@ -7,7 +7,7 @@ $user = "root";
 $password = "toor";
 $dbname = "sqli"; 
 
-$con = mysqli_connect($host, $user, $password,$dbname);
+$con = mysqli_connect($host, $user, $password, $dbname);
 // debug de la conexion //
 if (mysqli_connect_errno())
   {
