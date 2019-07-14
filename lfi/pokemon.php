@@ -2,6 +2,7 @@
 include "../include/header.php";
 
    $file = $_GET['file'];
+
    if(isset($file))
    {
        include("$file");
@@ -12,7 +13,7 @@ include "../include/header.php";
    }
 ?> 
 
-<h1>aca va el lfi. soi pokemon.php</h1>
+<h1>LFI / Soy pokemon.php</h1>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,20 +30,18 @@ include "../include/header.php";
                 <div class="col">
                     <h3>Explora Pokemon Red</h3>
                     <h4>Mapas</h4>
-                        <p><a href="../maps/pewter/city.php">Pewter City</a></p>
-                        <p><a href="../maps/cerulean/city.php">Cerulean City</a></p>
-                        <p><a href="../maps/vermilion/city.php">Vermilion City</a></p>
-                        <p><a href="../maps/saffron/city.php">Saffron City</a></p>
-                        <p><a href="../maps/celadon/city.php">Celadon City</a></p>
-                        <p><a href="../maps/fuchsia/city.php">Fuchsia City</a></p>
-                        <p><a href="../maps/cinnabar/city.php">Cinnabar Island</a></p>
-                        <p><a href="../maps/viridian/city.php">Viridian City</a></p>
+                        <p><a href="<?php echo "?file=" . "maps/pewter/city.php" ?>">Pewter City</a></p>
+                        <p><a href="<?php echo "?file=" . "maps/cerulean/city.php" ?>">Cerulean City</a></p>
+                        <p><a href="<?php echo "?file=" . "maps/vermilion/city.php"?>">Vermilion City</a></p>
+                        <p><a href="<?php echo "?file=" . "maps/saffron/city.php"?>">Saffron City</a></p>
+                        <p><a href="<?php echo "?file=" . "maps/fuchsia/city.php"?>">Fuchsia City</a></p>
+                        <p><a href="<?php echo "?file=" ."maps/cinnabar/city.php"?>">Cinnabar Island</a></p>
+                        <p><a href="<?php echo "?file=" ."maps/viridian/city.php"?>">Viridian City</a></p>
 
                         <hr>
 
                         <h4>Badges</h4>
                         <p><a href="#">Boulder</a></p>
-
                         <p><a href="#">Cascade</a></p>
                         <p><a href="#">Thunder</a></p>
                         <p><a href="#">Rainbow</a></p>

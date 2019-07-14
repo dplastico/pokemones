@@ -73,3 +73,7 @@ _pokemones_db es el container de la base de datos._
 4. Probar SQL Injection
 
 pikachu ' OR 1 = 1-- '
+
+5. LFI
+
+localhost:3000/lfi/pokemon.php?file=maps/pewter/city.php
