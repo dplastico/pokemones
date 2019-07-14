@@ -1,6 +1,8 @@
 <?php
 ob_start();
 
+$flag = "flag = test";
+
 include "config.php";
 include "../include/header.php";
 
@@ -30,7 +32,10 @@ if(isset($_POST['but_logout'])){
             <div class="container-narrow">
                 <div class="row">
                     <div class="col">
-                        <h1>Inicia sesión o sale si estas loggeado (hay q arreglar esop)</h1>
+                        <h1>Bienvenido</h1>
+
+                        <?php echo $flag ?>
+
                         <form method='post' action="">
                             <input class="button1" type="submit" value="Logout" name="but_logout">
                         </form>

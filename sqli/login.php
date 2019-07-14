@@ -3,6 +3,9 @@ ob_start();
 include "config.php";
 include "../include/header.php";
 
+$flag = "flag = test";
+
+
 if (isset($_POST['but_submit'])) {
     $uname    = $_POST['txt_uname'];
     $password = $_POST['txt_pwd'];
@@ -61,7 +64,7 @@ if (isset($_POST['but_submit'])) {
             </div>
         </div>
     </form>
-
+    
     </div>    
 </div>    
 </div>

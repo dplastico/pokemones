@@ -7,7 +7,6 @@ include "../include/header.php";
    {
        include("$file");
    }
-
 ?> 
 
 <h1>LFI</h1>

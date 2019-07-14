@@ -22,29 +22,28 @@
             <div class="row">
                <div class="challenge-container">
                   <div class="challenge-each" id="ch01">
-                    <h4>1. BRUTEFORCE</h4>
-                    <p>Puedes entrar a la DB sin las credenciales?</p>
-                    <p>Hazlo y consigue el primer flag.</p>
+                    <h4>DESAFÍO BULBASAUR</h4>
+                    <p>Qué esconde Bulbasaur en su capullo?</p>
 
                     <button onclick="window.location.href='bruteforce/home.php'" class="button1">Ir al desafío</button>                  
                 </div>
                   <div class="challenge-each" id="ch02">
-                    <h4> 2. XSS</h4>
-                    <p>Consigue un flag haciendo un cross site scripting.</p>
+                    <h4>DESAFÍO MEWTWO</h4>
+                    <p>Mewtwo Twomew</p>
 
                     <button onclick="window.location.href='xss/home.php'" class="button1">Ir al desafío</button>                  
 
                   </div>
                   <div class="challenge-each" id="ch03">
-                    <h4>3. LOCAL FILE INCLUSION</h4>
-                    <p>Puedes entrar a la DB sin las credenciales?</p>
+                    <h4>DESAFÍO EEVEE</h4>
+                    <p>eeVee</p>
 
                     <button onclick="window.location.href='lfi/pokemon.php'" class="button1">Ir al desafío</button>                  
 
                   </div>
                   <div class="challenge-each" id="ch04">
-                    <h4>4. SQL INJECTION</h4>
-                    <p>Consigue el proximo flag bypasseando este login.</p>
+                    <h4>DESAFÍO PIKACHU</h4>
+                    <p>Pika pika pikachuuu</p>
 
                     <button onclick="window.location.href='sqli/login.php'" class="button1">Ir al desafío</button>                  
 
