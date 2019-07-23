@@ -1,20 +1,26 @@
 <?php
 ob_start();
+error_log("OHAI");
 include "config.php";
 include "../include/header.php";
 
     if (isset($_POST['but_submit'])) {
+        error_log("User submitted");
+
         $uname    = mysqli_real_escape_string($con, $_POST['txt_uname']);
         $password = mysqli_real_escape_string($con, $_POST['txt_pwd']);
         
         if ($uname != "" && $password != "") {
             
             $sql_query = "select count(*) as cntUser from users where nickname='" . $uname . "' and passwd='" . $password . "'";
+            error_log($sql_query);
+
             $result    = mysqli_query($con, $sql_query);
             $row       = mysqli_fetch_array($result);
-            
+
             $count = $row['cntUser'];
-            
+            error_log("count: ".$count);
+
             if ($count > 0) {
                 $_SESSION['uname'] = $uname;
                 header('Location: home.php');
