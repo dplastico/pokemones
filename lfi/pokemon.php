@@ -18,6 +18,24 @@ include "../include/header.php";
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="../css/stylesheet.css">   
+      
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+
+        <script>
+        JQuery(document).ready(function(){
+            jQuery(".expand-content-link").click(function() {
+                jQuery(this).next(".hidden-content").toggle();
+                return false;
+            });
+        });
+        
+        </script>
+
+
     </head>
    <body>
     <div class="container">
@@ -26,7 +44,15 @@ include "../include/header.php";
                 <div class="col">
                     <h3>Explora Pokemon Red</h3>
                     <h4>Mapas</h4>
-                        <p><a href="<?php echo "?file=" . "maps/pewter/city.php" ?>">Pewter City</a></p>
+
+                   
+
+                        <p><a class="expand-content-link" href="<?php echo "?file=" . "maps/pewter/city.php" ?>">Pewter City</a></p>
+                        
+                        <div class="hidden-content">
+                            <img src="../lfi/maps/pewter/pokemon_rby_pewtercity.png">
+                        </div>
+                        <hr>
                         <?php include "../lfi/maps/pewter/city.php" ?>
                         <p><a href="<?php echo "?file=" . "maps/cerulean/city.php" ?>">Cerulean City</a></p>
                         <?php include "../lfi/maps/cerulean/city.php" ?>
