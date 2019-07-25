@@ -1,10 +1,25 @@
 <?php
-include "config.php";
-include "../include/header.php";
+// include "config.php";
+// include "../include/header.php";
 
-$flag = "flag = test";
+$flag = "only90sKIDSwillREMEMBERindigoLEAGUE";
 ?>
-    <?php echo $flag ?>
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <p style="color:white; font-size:5px;"><?php echo $flag ?></p>
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
+    <img src="dance.gif">
     <img src="dance.gif">
     <img src="dance.gif">
     <img src="dance.gif">

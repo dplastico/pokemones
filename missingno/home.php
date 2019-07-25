@@ -1,7 +1,7 @@
 <?php
 ob_start();
 
-$flag = "flag = test";
+$flag = "dontHEARlavenderTOWNsong";
 
 include "config.php";
 include "../include/header.php";
@@ -34,7 +34,7 @@ if(isset($_POST['but_logout'])){
                     <div class="col">
                         <h1>Bienvenido</h1>
 
-                        <?php echo $flag ?>
+                        <p style="color:white; font-size:5px; margin-top:1080px"><?php echo $flag ?></p>
 
                         <form method='post' action="">
                             <input class="button1" type="submit" value="Logout" name="but_logout">

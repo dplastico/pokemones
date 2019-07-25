@@ -3,7 +3,7 @@ ob_start();
 include "config.php";
 include "../include/header.php";
 
-$flag = "flag = test";
+// $flag = "only90sKIDSwillREMEMBERindigoLEAGUE";
 
 
 if (isset($_POST['but_submit'])) {

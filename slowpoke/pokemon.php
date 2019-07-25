@@ -1,12 +1,19 @@
 <?php
 include "../include/header.php";
 
-   $file = $_GET['file'];
+   $subdomain = $_GET['subdomain'];
+   $uncrested = $_GET['uncrested'];
+   $prochoos = $_GET['prochoos'];
+   $keepership = $_GET['keepership'];
+   $birdienumnum = $_GET['birdienumnum'];
+   $nonfluid = $_GET['nonfluid'];
+   $mussiest = $_GET['mussiest'];
+   $smokechaser = $_GET['smokechaser'];
 
-   if(isset($file))
-   {
-       include("$file");
-   }
+//    if(isset($file))
+//    {
+//        include("$file");
+//    }
 ?> 
 
 <!DOCTYPE html>
@@ -43,28 +50,71 @@ include "../include/header.php";
                     <h3>Explora Pokemon Red</h3>
                     <h4>Mapas</h4>
 
-                   
+                    <div class="div-maps-show-show-i-like-turtles">
+                    
+                    <p><a href="<?php echo "?subdomain=" . "maps/pewter/city.php" ?>">Pewter City</a></p>
+                    <?php
+                        if(isset($subdomain))
+                        {
+                            include("$subdomain");
+                        }
+                   ?>                    
 
-                        <p><a class="expand-content-link" href="<?php echo "?file=" . "maps/pewter/city.php" ?>">Pewter City</a></p>
-                        
-                        <div class="hidden-content">
-                            <img src="../slowpoke/maps/pewter/pokemon_rby_pewtercity.png">
-                        </div>
-                        <hr>
-                        <?php include "../slowpoke/maps/pewter/city.php" ?>
-                        <p><a href="<?php echo "?file=" . "maps/cerulean/city.php" ?>">Cerulean City</a></p>
-                        <?php include "../slowpoke/maps/cerulean/city.php" ?>
-                        <p><a href="<?php echo "?file=" . "maps/vermilion/city.php"?>">Vermilion City</a></p>
-                        <?php include "../slowpoke/maps/vermilion/city.php" ?>
-                        <p><a href="<?php echo "?file=" . "maps/saffron/city.php"?>">Saffron City</a></p>
-                        <?php include "../slowpoke/maps/saffron/city.php" ?>
-                        <p><a href="<?php echo "?file=" . "maps/fuchsia/city.php"?>">Fuchsia City</a></p>
-                        <?php include "../slowpoke/maps/fuchsia/city.php" ?>
-                        <p><a href="<?php echo "?file=" ."maps/cinnabar/city.php"?>">Cinnabar Island</a></p>
-                        <?php include "../slowpoke/maps/cinnabar/city.php" ?>
-                        <p><a href="<?php echo "?file=" ."maps/viridian/city.php"?>">Viridian City</a></p>  
-                        <?php include "../slowpoke/maps/viridian/city.php" ?>
-        
+
+                    <p><a href="<?php echo "?uncrested=" . "maps/cerulean/city.php" ?>">Cerulean City</a></p>
+                    <?php
+                        if(isset($uncrested))
+                        {
+                            include("$uncrested");
+                        }
+                   ?>
+                   
+                    <p><a href="<?php echo "?prochoos=" . "maps/vermilion/city.php"?>">Vermilion City</a></p>
+                        <?php
+                    if(isset($prochoos))
+                    {
+                        include("$prochoos");
+                    }
+                   ?>                        
+                   
+                   <p><a href="<?php echo "?keepership=" . "maps/saffron/city.php"?>">Saffron City</a></p>
+                   
+                   <?php
+                    if(isset($keepership))
+                    {
+                        include("$keepership");
+                    }
+                   ?>
+                   
+                        <p><a href="<?php echo "?birdienumnum=" . "maps/fuchsia/city.php"?>">Fuchsia City</a></p>
+
+                        <?php
+                    if(isset($birdienumnum))
+                    {
+                        include("$birdienumnum");
+                    }
+                   ?>
+                        <p><a href="<?php echo "?nonfluid=" ."maps/cinnabar/city.php"?>">Cinnabar Island</a></p>
+
+                        <?php
+                    if(isset($nonfluid))
+                    {
+                        include("$nonfluid");
+                    }
+                   ?>
+                        <p><a href="<?php echo "?mussiest=" ."maps/viridian/city.php"?>">Viridian City</a></p>  
+
+                    <?php
+                        if(isset($mussiest))
+                        {
+                            include("$mussiest");
+                        }
+                    ?>        
+                    
+                    
+                    </div>
+
+                    
                 </div>
             </div>
             </div>   
