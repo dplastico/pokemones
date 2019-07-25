@@ -78,3 +78,10 @@ pikachu ' OR 1 = 1-- '
 5. LFI
 
 localhost:3000/lfi/pokemon.php?file=maps/pewter/city.php
+
+6. New names
+
+- bruteforce --> missingno
+- xss --> ninopokimon
+- lfi --> slowpoke
+- sqli --> jinglepuff
