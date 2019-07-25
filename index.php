@@ -25,27 +25,27 @@
                     <h4>DESAFÍO BULBASAUR</h4>
                     <p>Qué esconde Bulbasaur en su capullo?</p>
 
-                    <button onclick="window.location.href='bruteforce/home.php'" class="button1">Ir al desafío</button>                  
+                    <button onclick="window.location.href='missingno/home.php'" class="button1">Ir al desafío</button>                  
                 </div>
                   <div class="challenge-each" id="ch02">
                     <h4>DESAFÍO MEWTWO</h4>
                     <p>Mewtwo Twomew</p>
 
-                    <button onclick="window.location.href='xss/home.php'" class="button1">Ir al desafío</button>                  
+                    <button onclick="window.location.href='ninopokimon/home.php'" class="button1">Ir al desafío</button>                  
 
                   </div>
                   <div class="challenge-each" id="ch03">
                     <h4>DESAFÍO EEVEE</h4>
                     <p>eeVee</p>
 
-                    <button onclick="window.location.href='lfi/pokemon.php'" class="button1">Ir al desafío</button>                  
+                    <button onclick="window.location.href='slowpoke/pokemon.php'" class="button1">Ir al desafío</button>                  
 
                   </div>
                   <div class="challenge-each" id="ch04">
                     <h4>DESAFÍO PIKACHU</h4>
                     <p>Pika pika pikachuuu</p>
 
-                    <button onclick="window.location.href='sqli/login.php'" class="button1">Ir al desafío</button>                  
+                    <button onclick="window.location.href='jinglepuff/login.php'" class="button1">Ir al desafío</button>                  
 
                   </div>
                </div>

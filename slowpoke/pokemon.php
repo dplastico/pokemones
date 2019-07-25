@@ -9,12 +9,10 @@ include "../include/header.php";
    }
 ?> 
 
-<h1>LFI</h1>
-
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>LFI | CTF PKMN</title>
+      <title>CTF PKMN</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="../css/stylesheet.css">   
@@ -50,22 +48,22 @@ include "../include/header.php";
                         <p><a class="expand-content-link" href="<?php echo "?file=" . "maps/pewter/city.php" ?>">Pewter City</a></p>
                         
                         <div class="hidden-content">
-                            <img src="../lfi/maps/pewter/pokemon_rby_pewtercity.png">
+                            <img src="../slowpoke/maps/pewter/pokemon_rby_pewtercity.png">
                         </div>
                         <hr>
-                        <?php include "../lfi/maps/pewter/city.php" ?>
+                        <?php include "../slowpoke/maps/pewter/city.php" ?>
                         <p><a href="<?php echo "?file=" . "maps/cerulean/city.php" ?>">Cerulean City</a></p>
-                        <?php include "../lfi/maps/cerulean/city.php" ?>
+                        <?php include "../slowpoke/maps/cerulean/city.php" ?>
                         <p><a href="<?php echo "?file=" . "maps/vermilion/city.php"?>">Vermilion City</a></p>
-                        <?php include "../lfi/maps/vermilion/city.php" ?>
+                        <?php include "../slowpoke/maps/vermilion/city.php" ?>
                         <p><a href="<?php echo "?file=" . "maps/saffron/city.php"?>">Saffron City</a></p>
-                        <?php include "../lfi/maps/saffron/city.php" ?>
+                        <?php include "../slowpoke/maps/saffron/city.php" ?>
                         <p><a href="<?php echo "?file=" . "maps/fuchsia/city.php"?>">Fuchsia City</a></p>
-                        <?php include "../lfi/maps/fuchsia/city.php" ?>
+                        <?php include "../slowpoke/maps/fuchsia/city.php" ?>
                         <p><a href="<?php echo "?file=" ."maps/cinnabar/city.php"?>">Cinnabar Island</a></p>
-                        <?php include "../lfi/maps/cinnabar/city.php" ?>
+                        <?php include "../slowpoke/maps/cinnabar/city.php" ?>
                         <p><a href="<?php echo "?file=" ."maps/viridian/city.php"?>">Viridian City</a></p>  
-                        <?php include "../lfi/maps/viridian/city.php" ?>
+                        <?php include "../slowpoke/maps/viridian/city.php" ?>
         
                 </div>
             </div>
